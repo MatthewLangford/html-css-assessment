@@ -1,4 +1,110 @@
 body{
+    margin: 0;
+    padding: 0;
     background-image: url("img/main-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
+    font-family: 'Slabo 27px', serif;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: white;
+}
+.middle{
+    font-size: 140px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+section{
+    margin-top: 25vh;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.port{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin-top: -20px;
+}
+.botArrow{
+    margin-top: 25vh;
+    height: 75px;
+    width: 75px;
+    background-color: #dbdbdb;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: 5px solid #dbdbdb;
+}
+.fa-long-arrow-down{
+    font-size: 35px;
+    margin-left: 41%;
+    margin-top: 30%;
+    color: gray;
+}
+.fa-bars{
+    display: none;
+    font-size: 35px;
+    color: white;
+    margin-left: 22%;
+    margin-top: 18%;
+}
+.bars{
+    display: none;
+    margin-left: 6vw;
+    margin-top: 6vh;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+}
+.fa-facebook{
+    font-size: 30px;
+    color: white;
+    display: none;
+    float: right;
+    margin-right: 10vw;
+    margin-top: 8vh;
+}
+.fa-twitter{
+    font-size: 30px;
+    color: white;
+    display: none;
+    float: right;
+    margin-right: 8vw;
+    margin-top: 8vh;
+}
+
+@media screen and (max-width: 768px){
+        h1{
+            display: none;
+        }
+        .bars {
+            display: inline-block;
+        }
+        .fa-bars{
+            display: block;
+        }
+        .fa-facebook{
+            display: inline-block;
+        }
+        .fa-twitter{
+            display: inline-block;
+        }
+        nav{
+            display: block;
+        }
+
+    }
